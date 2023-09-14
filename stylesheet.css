@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box  ;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 50px;
+}
+
+.cabecalho__menu__link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9375rem;
+    color: orange;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.cabecalho__menu__link:hover {
+    background-color: #272727;
+    color: white
+}
+
+strong {color: orange}
+h1{
+    font-weight: bold;
+}
+
+span{
+    color: orange;  
+}
+
+.conteudo {
+    padding: 6% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    gap: 82px;
+}
+
+.conteudo__apresentacao {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.conteudo__apresentacao__titulo {
+    font-size: 1.875rem;
+    font-family: 'Krona One', sans-serif;
+}
+
+.conteudo__apresentacao__texto {
+    font-size: 1.25rem;
+}
+
+.conteudo__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.conteudo__links__subtitulo {
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.conteudo__links__link {
+    /* background-color: orange; */
+    border: 3px outset #ffa500;
+    width: 150px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 1.125rem;
+    font-weight: 600px;
+    padding: 10px 0px;
+    text-decoration: none;
+    color: orange;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.conteudo__links__link:hover {
+    background-color: #272727;
+    color: white
+}
+
+.conteudo__imagem {
+    width: 40%;
+}
+
+.rodape {
+    text-align: center;
+    font-family: 'Krona One', sans-serif;
+    font-size: 1rem;
+    color: black;
+    background-color: #ffa500;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+@media (max-width 1200px) {
+    .conteudo {
+        flex-direction: column-reverse;
+    };
+}
+
